@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Car>
+
+<div class="container my-4">
+    <h1 class="text-center">Доступні автомобілі</h1>
+
+    <!-- Форма фільтрів -->
+    <form method="get" class="mb-4 p-3 border rounded">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label for="category" class="form-label">Категорія</label>
+                <select name="category" asp-items="ViewBag.Categories" class="form-select">
+                    <option value="">Всі категорії</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="minPrice" class="form-label">Мінімальна ціна</label>
+                <input type="number" name="minPrice" step="0.01" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <label for="maxPrice" class="form-label">Максимальна ціна</label>
+                <input type="number" name="maxPrice" step="0.01" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <label for="year" class="form-label">Рік</label>
+                <select name="year" id="year" class="form-select">
+                    <option value="">Всі роки</option>
+                    @for (int year = 2010; year <= 2024; year++)
+                    {
+                        <option value="@year">@year</option>
+                    }
+                </select>
+            </div>
+
+            <div class="col-md-3 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary w-100">Знайти</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Список автомобілів -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var car in Model)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@car.ImageUrl" class="card-img-top" alt="@car.Brand @car.Model">
+                    <div class="card-body">
+                        <h5 class="card-title">@car.Brand @car.Model</h5>
+                        <p class="card-text">
+                            <strong>Рік:</strong> @car.Year<br>
+                            <strong>Ціна за день:</strong> @car.PricePerDay.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))<br>
+                            <strong>Категорія:</strong> @(car.Category != null ? car.Category.Name : "Без категорії")
+                        </p>
+                        <a href="/Home/Details/@car.CarId" class="btn btn-primary">Деталі</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

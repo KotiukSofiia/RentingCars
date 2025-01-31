@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Car>
+
+<div class="container my-4">
+    <h1 class="text-center mb-4">Керування автомобілями</h1>
+
+    <!-- Кнопка для додавання нового автомобіля -->
+    <div class="d-flex justify-content-end mb-3">
+        <a href="/Admin/CreateCar" class="btn btn-primary">Додати новий автомобіль</a>
+    </div>
+
+    <!-- Таблиця автомобілів -->
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Бренд</th>
+                <th>Модель</th>
+                <th>Ціна за день</th>
+                <th>Статус</th>
+                <th class="text-center">Дії</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in Model)
+            {
+                <tr>
+                    <td>@car.Brand</td>
+                    <td>@car.Model</td>
+                    <td>@car.PricePerDay.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))</td>
+                    <td>@car.Status</td>
+                    <td class="text-center">
+                        <a href="/Admin/EditCar/@car.CarId" class="btn btn-sm btn-warning me-2">Редагувати</a>
+                        <a href="/Admin/DeleteCar/@car.CarId" class="btn btn-sm btn-danger me-2" onclick="return confirm('Ви впевнені, що хочете видалити цей автомобіль?');">Видалити</a>
+                        <a href="/Admin/CarMaintenance?carId=@car.CarId" class="btn btn-sm btn-info">Обслуговування</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<CarMaintenance>
+
+<div class="container my-4">
+    <h1 class="text-center">Обслуговування автомобіля</h1>
+
+    <!-- Форма для додавання обслуговування -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Додати запис обслуговування</h5>
+            <form asp-action="AddMaintenance" method="post">
+                <input type="hidden" name="CarId" value="@ViewBag.CarId" />
+
+                <div class="mb-3">
+                    <label for="MaintenanceDate" class="form-label">Дата</label>
+                    <input type="date" name="MaintenanceDate" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label for="Description" class="form-label">Опис</label>
+                    <input type="text" name="Description" class="form-control" required />
+                </div>
+                <div class="mb-3">
+                    <label for="Cost" class="form-label">Вартість</label>
+                    <input type="number" name="Cost" step="0.01" class="form-control" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Додати запис</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Таблиця обслуговування -->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Історія обслуговування</h5>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Опис</th>
+                        <th>Вартість</th>
+                        <th>Дія</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var record in Model)
+                    {
+                        <tr>
+                            <td>@record.MaintenanceDate.ToShortDateString()</td>
+                            <td>@record.Description</td>
+                            <td>@record.Cost.ToString("C", new System.Globalization.CultureInfo("uk-UA"))</td>
+                            <td>
+                                <a href="/Admin/DeleteMaintenance/@record.MaintenanceId" class="btn btn-danger btn-sm">Видалити</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

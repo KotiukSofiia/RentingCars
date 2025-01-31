@@ -1,0 +1,52 @@
+﻿@model KursDb.Models.ViewModels.CarFormViewModel
+
+<div class="container my-4">
+    <h1 class="text-center">Редагувати автомобіль</h1>
+
+    <form asp-action="EditCar" method="post" enctype="multipart/form-data" class="card p-4">
+        <input type="hidden" asp-for="CarId" />
+
+        <div class="mb-3">
+            <label for="Brand" class="form-label">Марка</label>
+            <input type="text" asp-for="Brand" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <label for="Model" class="form-label">Модель</label>
+            <input type="text" asp-for="Model" class="form-control" required />
+        </div>
+        <div>
+    <label for="Year">Рік</label>
+    <input type="number"
+           asp-for="Year"
+           class="form-control"
+           required
+           min="1900"
+           max="2025"
+           placeholder="Введіть рік" />
+</div>
+        <div class="mb-3">
+            <label for="PricePerDay" class="form-label">Ціна за день</label>
+            <input type="number" asp-for="PricePerDay" step="0.01" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <label for="Description" class="form-label">Опис</label>
+            <textarea asp-for="Description" class="form-control" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="ImageFile" class="form-label">Завантажити нове зображення</label>
+            <input type="file" name="ImageFile" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <img src="@Model.ImageUrl" class="img-thumbnail" alt="Поточне зображення" />
+        </div>
+        <div class="mb-3">
+            <label for="CategoryId" class="form-label">Категорія</label>
+            <select asp-for="CategoryId" asp-items="Model.Categories" class="form-select" required>
+                <option value="">Виберіть категорію</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Зберегти</button>
+    </form>
+
+    <a href="/Admin/ManageCars" class="btn btn-secondary mt-3">Назад до списку</a>
+</div>

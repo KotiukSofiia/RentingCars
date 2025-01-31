@@ -1,0 +1,48 @@
+﻿@model Reservation
+
+<div class="container my-4">
+    <h1 class="text-center">Бронювання автомобіля</h1>
+
+    @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"] as string))
+    {
+        <div class="alert alert-danger">
+            @ViewData["ErrorMessage"]
+        </div>
+    }
+
+    @if (ViewBag.OverlappingDates != null)
+    {
+        <div class="alert alert-warning">
+            <h5>Автомобіль недоступний у наступні дати:</h5>
+            <ul>
+                @foreach (var date in ViewBag.OverlappingDates)
+                {
+                    <li>@date.StartDate.ToShortDateString() - @date.EndDate.ToShortDateString()</li>
+                }
+            </ul>
+        </div>
+    }
+
+    <div class="card">
+        <div class="card-body">
+            <form asp-action="Book" method="post">
+                <input type="hidden" asp-for="CarId" />
+
+                <div class="mb-3">
+                    <label for="StartDate" class="form-label">Дата початку</label>
+                    <input type="date" asp-for="StartDate" class="form-control" value="@Model.StartDate.ToString("yyyy-MM-dd")" required />
+                </div>
+                <div class="mb-3">
+                    <label for="EndDate" class="form-label">Дата завершення</label>
+                    <input type="date" asp-for="EndDate" class="form-control" value="@Model.EndDate.ToString("yyyy-MM-dd")" required />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Підтвердити</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a href="/" class="btn btn-secondary">Повернутись до списку</a>
+    </div>
+</div>

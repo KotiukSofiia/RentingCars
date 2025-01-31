@@ -1,0 +1,458 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Sonya\\KursDb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\reservationdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\reservationdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\carrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\carrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\carmaintenance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\carmaintenance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\carcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\carcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\viewmodels\\popularcarview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\viewmodels\\popularcarview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\viewmodels\\carformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\viewmodels\\carformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\models\\viewmodels\\adminstatisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\models\\viewmodels\\adminstatisticsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\views\\admin\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\views\\admin\\statistics.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|e:\\sonya\\kursdb\\kursdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\views\\admin\\managereservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\views\\admin\\managereservations.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\views\\admin\\managecars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\views\\admin\\managecars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|E:\\Sonya\\KursDb\\kursdb\\views\\admin\\editcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|KursDb\\KursDb.csproj|solutionrelative:kursdb\\views\\admin\\editcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "KursDb\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "KursDb\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T13:52:47.889Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "KursDb\\Controllers\\AdminController.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "KursDb\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAA3wEMBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T14:34:02.419Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "KursDb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "KursDb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T15:56:31.065Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\User.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\User.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\User.cs",
+              "RelativeToolTip": "KursDb\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:12:06.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReservationDate.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\ReservationDate.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\ReservationDate.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\ReservationDate.cs",
+              "RelativeToolTip": "KursDb\\Models\\ReservationDate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:12:05.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\Reservation.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\Reservation.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\Reservation.cs",
+              "RelativeToolTip": "KursDb\\Models\\Reservation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:12:04.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\ErrorViewModel.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "KursDb\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:12:03.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CarRating.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\CarRating.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\CarRating.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\CarRating.cs",
+              "RelativeToolTip": "KursDb\\Models\\CarRating.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:12:03.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CarMaintenance.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\CarMaintenance.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\CarMaintenance.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\CarMaintenance.cs",
+              "RelativeToolTip": "KursDb\\Models\\CarMaintenance.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:12:02.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CarCategory.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\CarCategory.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\CarCategory.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\CarCategory.cs",
+              "RelativeToolTip": "KursDb\\Models\\CarCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:12:01.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Car.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\Car.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\Car.cs",
+              "RelativeToolTip": "KursDb\\Models\\Car.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:12:00.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CarFormViewModel.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\ViewModels\\CarFormViewModel.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\ViewModels\\CarFormViewModel.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\ViewModels\\CarFormViewModel.cs",
+              "RelativeToolTip": "KursDb\\Models\\ViewModels\\CarFormViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:11:59.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminStatisticsViewModel.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\ViewModels\\AdminStatisticsViewModel.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\ViewModels\\AdminStatisticsViewModel.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\ViewModels\\AdminStatisticsViewModel.cs",
+              "RelativeToolTip": "KursDb\\Models\\ViewModels\\AdminStatisticsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T12:30:20.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PopularCarView.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Models\\ViewModels\\PopularCarView.cs",
+              "RelativeDocumentMoniker": "KursDb\\Models\\ViewModels\\PopularCarView.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Models\\ViewModels\\PopularCarView.cs",
+              "RelativeToolTip": "KursDb\\Models\\ViewModels\\PopularCarView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T12:26:45.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "KursDb\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "KursDb\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAQwGUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T12:26:34.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Program.cs",
+              "RelativeDocumentMoniker": "KursDb\\Program.cs",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Program.cs",
+              "RelativeToolTip": "KursDb\\Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAlwCUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T00:12:06.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "KursDb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "KursDb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-22T00:01:00.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "KursDb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "KursDb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T22:58:17.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "KursDb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "KursDb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T22:57:19.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "KursDb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "KursDb\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T22:56:16.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "KursDb\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "KursDb\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T22:53:43.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Statistics.cshtml",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Views\\Admin\\Statistics.cshtml",
+              "RelativeDocumentMoniker": "KursDb\\Views\\Admin\\Statistics.cshtml",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Views\\Admin\\Statistics.cshtml",
+              "RelativeToolTip": "KursDb\\Views\\Admin\\Statistics.cshtml",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwDkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T22:40:49.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ManageReservations.cshtml",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Views\\Admin\\ManageReservations.cshtml",
+              "RelativeDocumentMoniker": "KursDb\\Views\\Admin\\ManageReservations.cshtml",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Views\\Admin\\ManageReservations.cshtml",
+              "RelativeToolTip": "KursDb\\Views\\Admin\\ManageReservations.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T22:37:36.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ManageCars.cshtml",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Views\\Admin\\ManageCars.cshtml",
+              "RelativeDocumentMoniker": "KursDb\\Views\\Admin\\ManageCars.cshtml",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Views\\Admin\\ManageCars.cshtml",
+              "RelativeToolTip": "KursDb\\Views\\Admin\\ManageCars.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T22:35:46.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EditCar.cshtml",
+              "DocumentMoniker": "E:\\Sonya\\KursDb\\KursDb\\Views\\Admin\\EditCar.cshtml",
+              "RelativeDocumentMoniker": "KursDb\\Views\\Admin\\EditCar.cshtml",
+              "ToolTip": "E:\\Sonya\\KursDb\\KursDb\\Views\\Admin\\EditCar.cshtml",
+              "RelativeToolTip": "KursDb\\Views\\Admin\\EditCar.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T22:33:21.115Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 155,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

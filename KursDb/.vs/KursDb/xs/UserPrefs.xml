@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{C767FE56-C56A-4850-A1ED-BAAE9F0C9F3D}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.KursDb PreferredExecutionTarget="/Applications/Arc.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="KursDb/Context/ApplicationDbContext.cs">
+    <Files>
+      <File FileName="KursDb/Controllers/AdminController.cs" Line="60" Column="14" />
+      <File FileName="KursDb/Views/Home/Index.cshtml" Line="17" Column="13" />
+      <File FileName="KursDb/Views/Home/MyReservations.cshtml" Line="16" Column="155" />
+      <File FileName="KursDb/Views/Home/Details.cshtml" Line="10" Column="137" />
+      <File FileName="KursDb/Views/Home/Book.cshtml" Line="1" Column="1" />
+      <File FileName="KursDb/Views/Home/AvailableCars.cshtml" Line="11" Column="70" />
+      <File FileName="KursDb/Views/Admin/Statistics.cshtml" Line="7" Column="1" />
+      <File FileName="KursDb/Views/Admin/ManageReservations.cshtml" Line="1" Column="1" />
+      <File FileName="KursDb/Views/Admin/ManageCars.cshtml" Line="28" Column="112" />
+      <File FileName="KursDb/Views/Admin/EditCar.cshtml" Line="17" Column="9" />
+      <File FileName="KursDb/Views/Admin/CreateCar.cshtml" Line="50" Column="1" />
+      <File FileName="KursDb/Views/Admin/CarMaintenance.cshtml" Line="1" Column="1" />
+      <File FileName="KursDb/Context/ApplicationDbContext.cs" Line="20" Column="1" />
+      <File FileName="KursDb/Controllers/HomeController.cs" Line="204" Column="25" />
+      <File FileName="KursDb/Models/Car.cs" Line="14" Column="50" />
+      <File FileName="KursDb/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="KursDb/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="KursDb/Models/CarCategory.cs" Line="14" Column="1" />
+      <File FileName="KursDb/Models/CarMaintenance.cs" Line="18" Column="1" />
+      <File FileName="KursDb/Models/CarRating.cs" Line="18" Column="1" />
+      <File FileName="KursDb/Models/ErrorViewModel.cs" Line="10" Column="1" />
+      <File FileName="KursDb/Models/Reservation.cs" Line="20" Column="2" />
+      <File FileName="KursDb/Models/ReservationDate.cs" Line="10" Column="1" />
+      <File FileName="KursDb/Models/User.cs" Line="10" Column="42" />
+      <File FileName="KursDb/Program.cs" Line="53" Column="1" />
+      <File FileName="KursDb/appsettings.json" Line="13" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="KursDb">
+            <Node name="KursDb">
+              <Node name="Context" expanded="True">
+                <Node name="ApplicationDbContext.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Admin" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

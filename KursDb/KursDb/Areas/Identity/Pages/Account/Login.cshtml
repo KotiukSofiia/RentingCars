@@ -1,0 +1,57 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Увійти";
+}
+
+<div class="container my-5">
+    <h1 class="text-center">@ViewData["Title"]</h1>
+
+    <div class="row justify-content-center mt-4">
+        <!-- Локальний вхід -->
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-4">Вхід до аккаунту</h4>
+                    <form id="account" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" placeholder="name@example.com" />
+                            <label asp-for="Input.Email">Email</label>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" type="password" placeholder="Пароль" />
+                            <label asp-for="Input.Password">Пароль</label>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" asp-for="Input.RememberMe" id="rememberMe" />
+                            <label class="form-check-label" for="rememberMe">
+                                Запам’ятати мене
+                            </label>
+                        </div>
+
+                        <button id="login-submit" type="submit" class="w-100 btn btn-primary btn-lg">Увійти</button>
+
+                        <div class="text-center mt-3">
+                            <a id="forgot-password" asp-page="./ForgotPassword">Забули пароль?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <p>Ще немає аккаунту? <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Зареєструватись</a></p>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,83 @@
+﻿@using KursDb.Models.ViewModels
+@model AdminStatisticsViewModel
+
+<div class="container my-4">
+    <h1 class="text-center mb-4">Статистика</h1>
+
+    <!-- Загальна інформація -->
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Загальна інформація</h5>
+                    <p class="card-text">Загальна кількість бронювань: <strong>@Model.TotalReservations</strong></p>
+                    <p class="card-text">Кількість бронювань за поточний місяць: <strong>@Model.MonthlyReservations</strong></p>
+                    <p class="card-text">Загальний дохід: <strong>@Model.TotalIncome.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))</strong></p>
+                    <p class="card-text">Дохід за поточний місяць: <strong>@Model.MonthlyIncome.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Витрати</h5>
+                    <p class="card-text">Загальна вартість обслуговування: <strong>@Model.TotalMaintenanceCost.ToString("C", new System.Globalization.CultureInfo("uk-UA"))</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Форма для обчислення доходу за період -->
+    <div class="my-4">
+        <h3 class="text-center">Обчислити дохід за вибраний період</h3>
+        <form method="get" action="/Admin/Statistics">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="startDate">Початок періоду</label>
+                    <input type="date" name="startDate" class="form-control" value="@ViewBag.StartDate" />
+                </div>
+                <div class="col-md-4">
+                    <label for="endDate">Кінець періоду</label>
+                    <input type="date" name="endDate" class="form-control" value="@ViewBag.EndDate" />
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary w-100">Обчислити</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Результат обчислення доходу за період -->
+    @if (ViewBag.CustomIncome != null)
+    {
+        <div class="alert alert-success">
+            <h4>Дохід за період: <strong>@ViewBag.CustomIncome?.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))</strong></h4>
+            <p>Період: @ViewBag.StartDate - @ViewBag.EndDate</p>
+        </div>
+    }
+
+    <!-- Найпопулярніші автомобілі -->
+    <div class="my-4">
+        <h3 class="text-center">Найпопулярніші автомобілі</h3>
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Марка</th>
+                    <th>Модель</th>
+                    <th>Кількість бронювань</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var car in Model.MostBookedCars)
+                {
+                    <tr>
+                        <td>@car.Car.Brand</td>
+                        <td>@car.Car.Model</td>
+                        <td>@car.Bookings</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

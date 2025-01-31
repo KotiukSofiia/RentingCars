@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Reservation>
+
+<div class="container my-4">
+    <h1 class="text-center">Мої бронювання</h1>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        @foreach (var reservation in Model)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">@reservation.Car.Brand @reservation.Car.Model</h5>
+                        <p class="card-text">
+                            <strong>Дата початку:</strong> @reservation.StartDate.ToShortDateString()<br>
+                            <strong>Дата закінчення:</strong> @reservation.EndDate.ToShortDateString()<br>
+                            <strong>Загальна ціна:</strong> @reservation.TotalPrice.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))<br>
+                            <strong>Статус:</strong> @reservation.Status
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

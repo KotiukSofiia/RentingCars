@@ -1,0 +1,49 @@
+﻿@model KursDb.Models.ViewModels.CarFormViewModel
+
+<div class="container my-4">
+    <h1 class="text-center">Додати автомобіль</h1>
+
+    <form asp-action="CreateCar" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="Brand">Марка</label>
+            <input type="text" asp-for="Brand" class="form-control" required />
+        </div>
+        <div>
+            <label for="Model">Модель</label>
+            <input type="text" asp-for="Model" class="form-control" required />
+        </div>
+        <div>
+            <label for="Year">Рік</label>
+            <input type="number"
+                   asp-for="Year"
+                   class="form-control"
+                   required
+                   min="1900"
+                   max="2025"
+                   placeholder="Введіть рік" />
+        </div>
+
+        <div>
+            <label for="PricePerDay">Ціна за день</label>
+            <input type="number" asp-for="PricePerDay" step="0.01" class="form-control" required />
+        </div>
+        <div>
+            <label for="Description">Опис</label>
+            <textarea asp-for="Description" class="form-control" required></textarea>
+        </div>
+        <div>
+            <label for="ImageFile">Зображення</label>
+            <input type="file" asp-for="ImageFile" class="form-control" required />
+        </div>
+        <div>
+            <label for="CategoryId">Категорія</label>
+            <select asp-for="CategoryId" asp-items="Model.Categories" class="form-select" required>
+                <option value="">Виберіть категорію</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Додати</button>
+    </form>
+
+
+    <a href="/Admin/ManageCars" class="btn btn-secondary mt-3">Назад до списку</a>
+</div>

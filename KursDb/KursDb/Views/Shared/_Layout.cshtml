@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KursDb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KursDb.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .rating {
+            display: inline-flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+            .rating input[type="radio"] {
+                display: none;
+            }
+
+            .rating label {
+                font-size: 2rem;
+                color: gray;
+                cursor: pointer;
+                margin: 0;
+            }
+
+            .rating input[type="radio"]:checked ~ label {
+                color: gold;
+            }
+
+            .rating label:hover,
+            .rating label:hover ~ label {
+                color: gold;
+            }
+    </style>
+    <style>
+        footer {
+            padding: 15px 0; /* Додає трохи внутрішнього відступу для футера */
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Rental Car <i class="fa-solid fa-car"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Головна</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/AvailableCars">Доступні автомобілі</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/MyReservations">Мої бронювання</a>
+                        </li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Керування
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+                                    <li><a class="dropdown-item" href="/Admin/ManageCars">Керування автомобілями</a></li>
+                                    <li><a class="dropdown-item" href="/Admin/ManageReservations">Керування бронюваннями</a></li>
+                                    <li><a class="dropdown-item" href="/Admin/Statistics">Статистика</a></li>
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Вітаю, @User.Identity.Name
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" href="/Identity/Account/Logout">Вийти</a></li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Identity/Account/Login">Увійти</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Identity/Account/Register">Зареєструватись</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            &copy; 2024 - Курсова робота. Котюк Софії ІПЗ-23-1
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

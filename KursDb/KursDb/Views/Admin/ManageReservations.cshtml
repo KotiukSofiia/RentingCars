@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Reservation>
+
+<div class="container my-4">
+    <h1 class="text-center mb-4">Керування бронюваннями</h1>
+
+    <!-- Таблиця бронювань -->
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Користувач</th>
+                <th>Автомобіль</th>
+                <th>Дата початку</th>
+                <th>Дата закінчення</th>
+                <th>Статус</th>
+                <th class="text-center">Дії</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reservation in Model)
+            {
+                <tr>
+                    <td>@reservation.User.UserName</td>
+                    <td>@reservation.Car.Brand @reservation.Car.Model</td>
+                    <td>@reservation.StartDate.ToShortDateString()</td>
+                    <td>@reservation.EndDate.ToShortDateString()</td>
+                    <td>@reservation.Status</td>
+                    <td class="text-center">
+                        @if (reservation.Status == "Очікує підтвердження")
+                        {
+                            <a href="/Admin/ConfirmReservation/@reservation.ReservationId" class="btn btn-sm btn-success me-2">Підтвердити</a>
+                            <a href="/Admin/CancelReservation/@reservation.ReservationId" class="btn btn-sm btn-danger">Скасувати</a>
+                        }
+                        else
+                        {
+                            <span class="text-muted">Дій не потрібно</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-end">
+        <a href="/Admin/ManageCars" class="btn btn-secondary">Повернутись до керування автомобілями</a>
+    </div>
+</div>

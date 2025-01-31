@@ -1,0 +1,68 @@
+﻿@model Car
+
+<div class="container my-4">
+    <div class="card">
+        <img src="@Model.ImageUrl" class="card-img-top" alt="@Model.Brand @Model.Model">
+        <div class="card-body">
+            <h2 class="card-title">@Model.Brand @Model.Model</h2>
+            <p class="card-text">
+                <strong>Рік:</strong> @Model.Year<br>
+                <strong>Ціна за день:</strong> @Model.PricePerDay.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))<br>
+                <strong>Опис:</strong> @Model.Description
+            </p>
+            <p>
+                <strong>Середній рейтинг:</strong>
+                @(Model.AverageRating > 0 ? Model.AverageRating.ToString("0.0") : "Немає оцінок")
+            </p>
+
+            @if (ViewBag.Reservations != null && ((List<ReservationDate>)ViewBag.Reservations).Count > 0)
+            {
+                <div class="alert alert-warning">
+                    <h5>Заброньовано у наступні дати:</h5>
+                    <ul>
+                        @foreach (var date in (List<ReservationDate>)ViewBag.Reservations)
+                        {
+                            <li>@date.StartDate.ToShortDateString() - @date.EndDate.ToShortDateString()</li>
+                        }
+                    </ul>
+                </div>
+            }
+            else
+            {
+                <p class="text-success">Цей автомобіль доступний для бронювання.</p>
+            }
+
+            <a href="/Home/Book/@Model.CarId" class="btn btn-primary">Забронювати</a>
+            <a href="/" class="btn btn-secondary">Повернутись до списку</a>
+        </div>
+    </div>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="card my-4">
+            <div class="card-body">
+                <h5>Оцінити автомобіль</h5>
+                <form asp-action="RateCar" method="post" class="rating-form">
+                    <input type="hidden" name="carId" value="@Model.CarId" />
+                    <div class="rating d-flex">
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5" title="5 зірок">☆</label>
+
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4" title="4 зірки">☆</label>
+
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3" title="3 зірки">☆</label>
+
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2" title="2 зірки">☆</label>
+
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1" title="1 зірка">☆</label>
+                    </div>
+                    <button type="submit" class="btn btn-success mt-2">Оцінити</button>
+                </form>
+            </div>
+        </div>
+    }
+</div>
