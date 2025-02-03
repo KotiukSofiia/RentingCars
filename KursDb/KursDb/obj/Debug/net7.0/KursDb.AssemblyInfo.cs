@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KursDb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e5cf9d6598a31c2b591e9a0d3320ac3558c242f")]
 [assembly: System.Reflection.AssemblyProductAttribute("KursDb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KursDb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
